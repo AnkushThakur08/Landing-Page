@@ -1,0 +1,117 @@
+body {
+  background-image: url("../images/bg.png");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  margin: 0 5%;
+}
+
+nav {
+  display: flex;
+  height: 20vh;
+}
+
+.nav-link {
+  color: #fff;
+  font-size: 25px;
+}
+
+.nav-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  flex: 2;
+}
+
+.brand-img {
+  flex: 1;
+  margin: auto;
+}
+
+.nav-menu-icon {
+  display: none;
+}
+
+.brand-img img {
+  height: 80px;
+}
+
+.nav-button {
+  background-color: #e03b8b;
+  border: none;
+  padding: 5px 40px;
+  border-radius: 30px;
+}
+
+.container {
+  display: flex;
+  flex: 1;
+  height: 80vh;
+}
+
+.col {
+  display: flex;
+  flex: 0.5;
+  min-height: 100%;
+}
+
+.col-2 {
+  overflow: hidden;
+}
+
+.phone-image {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 80%;
+}
+
+.col-1 {
+  flex-direction: column;
+  color: #fff;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.col-1 p {
+  font-size: 25px;
+}
+
+.col-1 h1 {
+  font-size: 70px;
+  margin: 20px 0;
+}
+
+.playstore-image {
+  height: 80px;
+}
+
+@media screen and (max-width: 1230px) {
+  .phone-image {
+    height: 60%;
+  }
+
+  .nav-items {
+    display: none;
+  }
+
+  .nav-menu-icon {
+    display: block;
+    margin: auto;
+  }
+
+  .icon-size {
+    color: #fff;
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .phone-image {
+    display: none;
+  }
+  .col-1 {
+    margin: 0 100px;
+  }
+}
